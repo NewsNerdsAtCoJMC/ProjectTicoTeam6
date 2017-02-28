@@ -1,6 +1,6 @@
 # ProjectTicoTeam6
-    This project will combine traffic data with event data to provide a
-    useful service to people in Lincoln. 
+    This project will track community service for participants 
+    and service employers. 
     
     Contributors:
     Bailey Schulz 
