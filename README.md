@@ -1,3 +1,7 @@
 # ProjectTicoTeam6
+This project will track community service for participants and service employers.
 
-A project that will help people track volunteer hours.
+Contributors:
+
+* Bailey Schulz
+* Ky Veney
