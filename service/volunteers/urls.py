@@ -1,8 +1,6 @@
-from django.conf.urls import url
-from . import views
+from django.conf.urls import url, include
+from volunteers import views
 
 urlpatterns = [
-    # /volunteers/
     url(r'^$', views.index, name= 'index'),
-
 ]
