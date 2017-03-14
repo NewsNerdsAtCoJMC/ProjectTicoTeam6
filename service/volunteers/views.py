@@ -1,6 +1,6 @@
 from django.shortcuts import render
 <<<<<<< HEAD
-from .models import VolunteerConfig
+from .models import Volunteer,
 # Create your views here.
 def index(request):
     all_volunteers = volunteers.objects.all()
