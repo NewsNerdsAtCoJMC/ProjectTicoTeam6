@@ -15,8 +15,8 @@ Including another URLconf
 """
 from django.conf.urls import url, include
 from django.contrib import admin
-from service.volunteers import views as volunteer_views
-from service.organizations import views as organizations_views
+from volunteers import views as volunteer_views
+from organizations import views as organizations_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
