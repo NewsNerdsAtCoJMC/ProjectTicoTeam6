@@ -20,7 +20,7 @@ from organizations import views as organizations_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', volunteer_views.index, name='index'),
-    url(r'^volunteers/', volunteer_views.home, name='home'),
+    url(r'^volunteers$', volunteer_views.index, name='index'),
+    url(r'^home', volunteer_views.home, name='home'),
     #url(r'^organizations/', organizations_views.home, name='home'),
 ]
