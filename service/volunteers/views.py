@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Volunteer
-# Create your views here.
+from volunteers.models import Volunteer
+
 def index(request):
     all_volunteers = Volunteer.objects.all()
     return render(request, 'volunteers/templates/volunteers/index.html', {'all_volunteers': all_volunteers})
