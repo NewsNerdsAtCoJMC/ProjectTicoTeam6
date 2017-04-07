@@ -1,0 +1,18 @@
+
+{% block content %}
+
+<h1>log yo hours</h1>
+
+<form action="/volunteers/" method="post">
+    {% csrf_token %}
+    {{ vf }}
+    <input type="submit" value="Submit" />
+</form>
+
+
+{% for object in hours %}
+
+{{ object.date }}
+{% endfor %}
+
+{% endblock %}

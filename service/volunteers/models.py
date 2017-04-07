@@ -1,4 +1,5 @@
 from django.db import models
+from django.contrib.auth.models import User
 
 class Volunteer(models.Model):
     name = models.CharField(max_length=255)
@@ -10,3 +11,11 @@ class Volunteer(models.Model):
 
     def __str__(self):
         return self.name
+
+class VolunteerHours(models.Model):
+    user = models.ForeignKey(User, unique=True)
+    date = models.DateField()
+    hours= models.FloatField()
+
+    def __str__(self):
+        return self.user

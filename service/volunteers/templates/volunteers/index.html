@@ -1,19 +1,7 @@
-<!DOCTYPE html>
-<html>
-<body>
-  <h1> Albums </h1>
-  <p> This page is my first go at making a web app for my website. </p>
-  {% if all_albums %}
-  <ul>
-    {% for album in all_albums %}
-    <li><a href="/music/{{ album.id }}/">{{ album.album_title }}</a></li>
-    {% endfor %}
-  </ul>
-  {% else %}
-      <h3>You have no albums</h3>
-  {% endif %}
+{% extends 'base.html' %}
 
+{% block content %}
 
+<h1>Stop being worthless and help your community.</h1>
 
-</body>
-</html>
+{% endblock %}

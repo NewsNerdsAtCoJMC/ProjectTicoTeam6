@@ -1,10 +1,20 @@
 from django.shortcuts import render
 from .models import Volunteer
-from volunteers.models import Volunteer
+from volunteers.models import Volunteer, VolunteerHours
+from volunteers.forms import VolunteerForm
 
 def index(request):
-    all_volunteers = Volunteer.objects.all()
-    return render(request, 'volunteers/base.html', {'all_volunteers': all_volunteers})
+    context = {}
+    return render(request, 'volunteers/index.html', context)
+
+def detail(request):
+    if not request.user.is_authenticated:
+        return redirect('/')
+    else:
+        vf = VolunteerForm
+        hours = VolunteerHours.objects.filter(user=request.user)
+        context = {'vf': vf, 'hours': hours}
+    return render(request, 'volunteers/detail.html', context)
 
 #def home(request):
 #    hello = "Hello World"
