@@ -5,14 +5,13 @@
 
 <form action="/volunteers/" method="post">
     {% csrf_token %}
-    {{ vf }}
+    {{ form }}
     <input type="submit" value="Submit" />
 </form>
 
-
-{% for object in hours %}
-
-{{ object.date }}
-{% endfor %}
+<h2>My hours</h2>
+<ul>{% for object in hours %}
+<li>{{ object.date }} for {{ object.hours }} hours</li>
+{% endfor %}</ul>
 
 {% endblock %}

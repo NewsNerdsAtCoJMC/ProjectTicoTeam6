@@ -13,9 +13,9 @@ class Volunteer(models.Model):
         return self.name
 
 class VolunteerHours(models.Model):
-    user = models.ForeignKey(User, unique=True)
+    user = models.ForeignKey(User)
     date = models.DateField()
     hours= models.FloatField()
 
     def __str__(self):
-        return self.user
+        return self.user.username
