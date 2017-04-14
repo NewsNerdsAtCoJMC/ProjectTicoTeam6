@@ -2,9 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from organizations.models import Organization
 
-def index(request):
+def detail(request):
     all_organizations = Organization.objects.all()
+    context = {'all_organizations': all_organizations}
     return render(request, 'organizations/index.html', context)
-def home(request):
-    hello = "Hello World"
-    return render(request, 'organizations/templates/organizations/index.html', {'all_organizations': all_organizations})
