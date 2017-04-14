@@ -3,18 +3,17 @@
 {% block content %}
 
 <div class="container-fluid">   
-  <div class="row">     
-    <div class="col-xs-12">     
-      <div class="floated_img">      <a href="images/whitechurch.jpg" data-lightbox="image-1" data-title="My caption">      <img src="images/whitechurch.jpg" alt="Some image" width="250" height="250"> </a> </div>
-      <div class="floated_img"> <a href="images/volunteer.jpg" data-lightbox="image-1" data-title="My caption">      <img src="images/volunteer.jpg" alt="Another image" width="250" height="250"> </a>      </div>
-        
-      <div class="floated_img">   <a href="images/building1.jpg" data-lightbox="image-1" data-title="My caption">     <img src="images/building1.jpg" alt="Building image" width="250" height="250"> </a> </div>
-        
-      <div class="floated_img">   <a href="images/building2.jpg" data-lightbox="image-1" data-title="My caption">     <img src="images/building2.jpg" alt="Another Building image" width="250" height="250"> </a> </div>
-        
-        
-        
-      <div class="floated_img">   <a href="images/building3.jpeg" data-lightbox="image-1" data-title="My caption">     <img src="images/building3.jpeg" alt="Another Building Great image" width="250" height="250"> </a> </div>
+  <div class="row">   
+    <div class="col-xs-12">
+      {% for object in all_organizations %}     
+      <div class="floated_img">
+        <a href="/static/images/whitechurch.jpg" data-lightbox="image-1" data-title="My caption">     
+          <img src="/static/images/whitechurch.jpg" alt="Some image" width="250" height="250"> </a>
+          <h3>{{ object.name }} -- {{ object.location }}</h3>
+          <p>{{ object.description }}</p>
+      </div>
+{% endfor %}
+
         </div>
   </div>
 </div>
