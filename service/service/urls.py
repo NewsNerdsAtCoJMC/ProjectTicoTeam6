@@ -17,6 +17,10 @@ from django.conf.urls import url, include
 from django.contrib import admin
 from volunteers import views as volunteer_views
 from organizations import views as organizations_views
+from django.conf.urls.static import static
+from django.conf import settings
+
+
 
 urlpatterns = [
     url(r'^$', volunteer_views.index, name='index'),
@@ -25,4 +29,4 @@ urlpatterns = [
     url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^admin/', admin.site.urls),
     #url(r'^organizations/', organizations_views.home, name='home'),
-]
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
