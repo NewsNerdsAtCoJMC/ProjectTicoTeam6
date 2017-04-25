@@ -1,5 +1,8 @@
 {% extends 'base.html' %}
-
+{% block css %}
+<link href="/static/css/volunteer.css" rel="stylesheet">
+<link href="/static/css/lightbox.css" rel="stylesheet">
+<link href="/static/css/flexboxgridSRV.min.css" rel="stylesheet">{% endblock %}
 {% block content %}
 
 <div class="row center-xs">
@@ -7,5 +10,6 @@
     <img src="/static/images/SRVLogo2.png" class="homepagelogo">
   </div>
 </div>
+{% endfor %}
 
 {% endblock %}
