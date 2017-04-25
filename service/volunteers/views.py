@@ -9,7 +9,7 @@ from django.contrib.auth.models import User
 
 def index(request):
     context = {}
-    return render(request, 'volunteers/index.html', context)
+    return render(request, '/volunteers/static/index.html/', context)
 
 @login_required(login_url='/accounts/login/')
 def detail(request):
@@ -24,4 +24,4 @@ def detail(request):
         form = VolunteerForm()
         hours = VolunteerHours.objects.filter(user=request.user)
         context = {'form': form, 'hours': hours}
-        return render(request, 'volunteers/detail.html', context)
+        return render(request, '/volunteers/static/volunteers/detail.html', context)
