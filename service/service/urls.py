@@ -26,6 +26,7 @@ urlpatterns = [
     url(r'^$', volunteer_views.index, name='index'),
     url(r'^volunteers/$', volunteer_views.detail, name='index'),
     url(r'^organizations/$', organizations_views.detail, name='index'),
+    url(r'^about/$', volunteer_views.about, name='index')
     url(r'^accounts/', include('registration.backends.simple.urls')),
     url(r'^admin/', admin.site.urls),
     #url(r'^organizations/', organizations_views.home, name='home'),
