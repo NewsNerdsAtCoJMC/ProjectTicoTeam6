@@ -13,14 +13,15 @@
 
         <div class="row center-xs">
       <div class="col-xs-12">
-            <h3>Looking for extra help?</h3>
+            <h1>Looking for extra help?</h1>
           </div>
     </div>
         <div class="row center-xs">
       <div class="col-xs-12">
-            <h4>Fill out the form below and SRV LNK will help you find eager volunteers!</h4>
+            <h3>Fill out the form below and SRV LNK will help you find eager volunteers!</h3>
           </div>
     </div>
+    <div>
     {% csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="Submit" />
@@ -31,7 +32,8 @@
 <li>{{ object.date }} for {{ object.hours }} hours</li>
 {% endfor %}</ul>
 
-</div>
+<h3><strong>Not registered yet? Sign up <a href="/accounts/register/">here!</a></strong></h3>
 
+</div>
 
 {% endblock %}
