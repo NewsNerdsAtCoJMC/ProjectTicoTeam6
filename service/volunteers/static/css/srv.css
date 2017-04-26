@@ -1,5 +1,5 @@
 	* {
-   font-family: sans-serif; 
+   font-family: sans-serif;
 }
 .homepagelogo{
 	padding: 15%;
@@ -11,8 +11,6 @@ body{
 	background-size: 85%;
 	background-position: center;
 	background-repeat: no-repeat;
-	
-	
 }
 
 h1 {
@@ -20,16 +18,26 @@ h1 {
     margin-top: 1.5em;
 }
 h2 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     margin-top: 1.5em;
 }
+h3 {position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+
+}
 p  {
-    font-size: .5em;  
-	
+    font-size: .5em;
+
 }
 ul {
 	font-size: .5em;
-	
+
 }
 h4 {font-size: .3em;}
 
@@ -52,7 +60,7 @@ a:hover {
 
 /* Grid */
 .container-fluid {
-    max-width: 1200px; 
+    max-width: 1200px;
 
     padding: 0;
 }
@@ -87,5 +95,3 @@ nav li a:hover {
     background-color: rgb(180, 180, 180);
 	transition: .3s background-color;
 }
-
-

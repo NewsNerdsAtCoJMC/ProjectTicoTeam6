@@ -1,23 +1,23 @@
 	* {
-   font-family: sans-serif; 
+   font-family: sans-serif;
 }
 body {
- 
+
 }
 h1 {
     font-size: 2em;
     margin-top: 1.5em;
 }
 h2 {
-    font-size: 1.5em; 
+    font-size: 1.5em;
     margin-top: 1.5em;
 }
 p  {
-    font-size: .3em;   
+    font-size: .3em;
 }
 ul {
 	font-size: .5em;
-	
+
 }
 
 a:link {
@@ -39,11 +39,28 @@ a:hover {
 
 /* Grid */
 .container-fluid {
-    max-width: 1200px; 
+    max-width: 1200px;
 
     padding: 0;
 }
 
+.wrap {
+    width: 1060px;
+    height:auto;
+    margin: auto;
+    text-align:center;
+    position:relative;
+}
+.text_over_image {
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left:0;
+    right:0;
+    bottom:0;
+    color:#fff;
+    height:100px;
+}
 
 
 /* Navigation */
@@ -74,5 +91,3 @@ nav li a:hover {
     background-color: rgb(180, 180, 180);
 	transition: .3s background-color;
 }
-
-
