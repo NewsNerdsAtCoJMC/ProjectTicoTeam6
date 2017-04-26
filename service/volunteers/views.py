@@ -24,8 +24,8 @@ def detail(request):
         form = VolunteerForm()
         hours = VolunteerHours.objects.filter(user=request.user)
         context = {'form': form, 'hours': hours}
-        return render(request, '/volunteers/volunteers/detail.html', context)
+        return render(request, 'volunteers/detail.html', context)
 
 def about(request):
         about = {}
-        return render(request, '/volunteers/templates/volunteers/about.html', about)
+        return render(request, 'volunteers/about.html', about)

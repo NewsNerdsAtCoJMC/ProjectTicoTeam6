@@ -1,5 +1,16 @@
+{% extends 'base.html' %}
+{% block css %}
+<link href="/static/css/flexboxgridSRV.min.css" rel="stylesheet">
+<link href="/static/css/lightbox.css" rel = "stylesheet">
+<link href="/static/css/volunteer.css" rel="stylesheet">{% endblock %}
+{% block title %}Login{% endblock %}
+
+{% block content %}
+
 <form action="/" method="post">
     {% csrf_token %}
-    {{ form }}
+     {{ form.as_ul }}
     <input type="submit" value="Submit" />
 </form>
+
+{% endblock %}
