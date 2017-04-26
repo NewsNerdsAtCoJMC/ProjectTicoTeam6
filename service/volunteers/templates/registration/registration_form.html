@@ -3,17 +3,26 @@
 {% block css %}
 <link href="/static/css/flexboxgridSRV.min.css" rel="stylesheet">
 <link href="/static/css/lightbox.css" rel = "stylesheet">
-<link href="/static/css/volunteerfinder.css" rel="stylesheet">
+<link href="/static/css/srv.css" rel="stylesheet">
 {% endblock %}
 
 {% block title %}Login{% endblock %}
 
 {% block content %}
-
+<div style="position:relative; top: 150px; left: 40px; right: 80 px; background-color:white;">
 <form action="/" method="post">
     {% csrf_token %}
-     {{ form.as_ul }}
+    {{ form.as_ul }}
     <input type="submit" value="Submit" />
 </form>
-
+</div>
 {% endblock %}
+
+<style>
+          .my_text
+          {
+              font-family:    Arial, Helvetica, sans-serif;
+              font-size:      40px;
+              font-weight:    bold;
+          }
+      </style>

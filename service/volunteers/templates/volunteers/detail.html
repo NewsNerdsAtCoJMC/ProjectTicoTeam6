@@ -21,7 +21,10 @@
             <h3>Fill out the form below and SRV LNK will help you find eager volunteers!</h3>
           </div>
     </div>
-    <div>
+
+
+    <div style="position:relative; left:80px;">
+      This div has relative positioning.
     {% csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="Submit" />
@@ -33,7 +36,6 @@
 {% endfor %}</ul>
 
 <h3><strong>Not registered yet? Sign up <a href="/accounts/register/">here!</a></strong></h3>
-
 </div>
 
 {% endblock %}
