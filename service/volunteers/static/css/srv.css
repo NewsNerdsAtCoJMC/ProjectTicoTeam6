@@ -11,6 +11,7 @@ body{
 	background-size: 85%;
 	background-position: center;
 	background-repeat: no-repeat;
+	text-align: center;
 }
 
 h1 {
@@ -21,18 +22,13 @@ h2 {
     font-size: 1.5em;
     margin-top: 1.5em;
 }
-h3 {position: absolute;
-    margin: auto;
-    top: 0;
-    left:0;
-    right:0;
-    bottom:0;
-    color:#fff;
-    height:100px;
+h3 {
+	  text-align: center;
 
 }
 p  {
     font-size: .5em;
+		text-align: center;
 
 }
 ul {
@@ -61,6 +57,8 @@ a:hover {
 /* Grid */
 .container-fluid {
     max-width: 1200px;
+		text-align: center;
+
 
     padding: 0;
 }
