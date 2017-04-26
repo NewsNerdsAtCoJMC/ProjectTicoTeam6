@@ -2,7 +2,7 @@
    font-family: sans-serif;
 }
 body {
-	
+
 }
 h1 {
     font-size: 2em;
@@ -60,6 +60,10 @@ a:hover {
     bottom:0;
     color:#fff;
     height:100px;
+}
+
+.transparent{
+  background:rgba(255,255,255,0.5);
 }
 
 
