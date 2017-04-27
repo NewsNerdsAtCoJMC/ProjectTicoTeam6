@@ -23,13 +23,12 @@
 
 
     <div style="position:relative; left:80px;">
-      This div has relative positioning.
     {% csrf_token %}
     {{ form.as_ul }}
     <input type="submit" value="Submit" />
 </form>
 
-<h2>{{ request.user.username }}'s hours</h2>
+<h2 style="text-decoration:none">{{ request.user.username }}'s hours</h2>
 <ul>{% for object in hours %}
 <li>{{ object.date }} for {{ object.hours }} hours</li>
 {% endfor %}</ul>
